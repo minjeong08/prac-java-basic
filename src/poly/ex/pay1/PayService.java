@@ -1,7 +1,5 @@
 package poly.ex.pay1;
 
-import java.util.Scanner;
-
 public class PayService {
 
     public void processPay(String option, int amount) {
@@ -14,21 +12,5 @@ public class PayService {
         } else {
             System.out.println("결제가 실패했습니다");
         }
-    }
-
-    public static String getOption() {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("결제 수단을 입력하세요 : ");
-
-        return scanner.nextLine();
-    }
-
-    public static int getAmount() {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("결제 금액을 입력하세요 : ");
-
-        return scanner.nextInt();
     }
 }
